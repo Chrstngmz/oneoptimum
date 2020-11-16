@@ -5,6 +5,17 @@
     border-radius: 3px;
 }
 
+.about-top-container h3{
+    color: #a4d247; 
+    text-align: center;
+}
+
+.h1-underline{
+    font-family: 'Righteous', cursive; 
+    text-align: center; 
+    color: #000000; 
+}
+
 .h1-underline span{
     font-family: 'Righteous', cursive;
     color: #000000;
@@ -29,6 +40,7 @@
     line-height: 1.5em;
     text-indent: 50px;
     text-align: justify;
+    padding: 10px;
 }
 
 .wwsf{
@@ -42,11 +54,22 @@
     gap: 15px;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 .our-product .mission .vission, h2 , p{
     color: #000000;
+}
+
+.awards-h1-container{
+    padding-top: 50px; 
+}
+
+.awards-h1{
+    text-align: center; 
+    color: #000000; 
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
 }
 
 .awards-des-wrapper{
@@ -60,10 +83,45 @@
 }
 
 .awards-des-wrapper li{
-    
     color: #000000;
     list-style: disc;
     line-height: 1.5em;
+}
+
+.awards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 20px;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.awards-post{
+    border-radius: 5px;
+    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.awards-thumbnail{
+    display: block;
+    width: 100%;
+    height: 400px;
+}
+
+.magazine-h1{
+    padding-top: 30px;
+    text-align: center; 
+    color: #000000; 
+    font-family: 'Righteous', cursive;
+    font-size: 3em; 
+}
+
+.license-container h1{
+    color: #000000; 
+    text-align: center;
+    font-family: 'Righteous', cursive;
 }
 
 .license-des-wrapper p {
@@ -77,13 +135,21 @@
 
 .license-container h1{
     font-family: 'Righteous', cursive;
+    color: #000000;
 }
 
 .license-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
     gap: 15px;
     width: 100%;
+}
+
+.license-img-halal h3,
+.license-img-fda1 h3, 
+.license-img-fda2 h3{
+    color: #000000;
 }
 
 .license-images{
@@ -98,10 +164,15 @@
 }
 
 /*PRODUCTS-PAGE*/
-.product-header h1, h3{
+.product-header h3{
+    text-align: center;
+    color: #a4d247;
+}
+
+.product-header h1{
     text-align: center;
     color: #000000;
-    
+    font-family: 'Righteous', cursive;
 }
 
 .h1-underline-product span{
@@ -125,15 +196,19 @@
 
 .product-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
     overflow: auto;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 .product-post{
-    height: 800px;
+    height: auto;
     width: 100%;
     overflow: hidden;
+    margin: 0 0 20px 0;
 }
 
 .product-image{
@@ -184,7 +259,7 @@
     border-radius: 15px;
     font-size: 18px;
     font-weight: bolder;
-    padding: 11px;
+    padding: 10px;
 }
 
 .order-now a:hover{
@@ -194,6 +269,15 @@
 }
 
 /*MEMBERSHIP-PAGE*/
+.membership-h1 h3{
+    text-align: center; 
+    color: #a4d247;
+}
+
+.membership-h1 h1{
+    text-align: center; 
+    color: #000000;
+}
 .membership-header-container{
     margin: 0 auto;
     width: 80%;
@@ -231,13 +315,22 @@
     text-transform: uppercase;
 }
 
+.membership-package-container p{
+    padding: 0 20px; 
+    line-height: 1.5em;
+}
+
 .membership-package-wrapper-1{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     overflow: auto;
     justify-content: center;
     margin: 50px 0 0 0 ;
+}
+
+.package-title{
+    color: #000000;
 }
 
 .package-image{
@@ -251,6 +344,14 @@
 
 .package-price{
     font-size: x-large;
+}
+
+.package-price span{
+    color:#000000;
+}
+
+.package-preview h5{
+    color: #000000;
 }
 
 .package-inclusions li{
@@ -268,7 +369,7 @@
 
 .stockist-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 50px;
     width: 100%;
     overflow: auto;
@@ -291,13 +392,17 @@
 
 .more-benefits-wrapper p{
     font-size: 20px;
-
 }
 
 .more-benefits-inclusions li{
     color: #000000;
     line-height: 2em;
     font-size: 18px;
+}
+
+.message-fb{
+    text-align: center; 
+    font-size: 30px;
 }
 
 .free li{
@@ -313,6 +418,16 @@
 
 /*TESTIMONIALS*/
 
+.testimonials-top-container h3{
+    color: #a4d247; 
+    text-align: center;
+}
+
+.testimonials-top-container h1{
+    text-align: center; 
+    color: #000000;
+}
+
 .testimonial-container p{
     line-height: 1.5em;
     padding: 10px;
@@ -320,14 +435,13 @@
 
 .testimonial-post-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center;
-
+    padding: 20px;
 }
 
 .testimonial-image{
-    display: block;
     width: 100%;
     height: 400px;
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
@@ -338,31 +452,98 @@
 /*Contacts*/
 .contact-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
     width: 100%;
     overflow: auto;
-    margin-top: 100px;
+    margin: 50px 0 10px 0;
+    padding: 0;
+}
+
+.contact1-image-wrapper{
+    display: grid;
+    padding: 20px;
 }
 
 .contact-image{
-    height:auto;
-    width:100%;
-    border-radius: 2%;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
     box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
+.contacts-h1 h1{
+    font-family: 'Righteous', cursive; 
+    text-align: center; 
+    color: #000000;
+}
+.contacts-h1 h3{
+    color: #a4d247; 
+    text-align: center;
+}
 
 .contact1-information h1{
     color: black;
     font-size: 3em;
+    margin: 30px 0 0 0;
 }
 
 .contact1-information h4{
     font-size: 20px;
     font-weight: lighter;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 860px){
+    .about-top-container h1,
+    .membership-h1 h1, 
+    .testimonials-top-container h1,
+    .contacts-h1 h1{
+        font-size: 2.5em;
+    }
+    .awards-h1,
+    .magazine-h1,
+    .license-container h1,
+    .contact1-information h1{
+        font-size: 2em;
+    }
+    
+    .testimonial-container h2,
+    .product-knowledge h2{
+        font-size: 1.8em;
+    }
+    .membership-package-container h2,
+    .package-title{
+        font-size: 1.3em;
+    }
+    .about-wrapper p,
+    .awards-des-wrapper p,
+    .license-des-wrapper p,
+    .membership-content p,
+    .product-knowledge p,
+    .package-preview h5,
+    .contact1-information h4{
+        font-size: 1em;
+    }
+    .membership-package-container p,
+    .package-inclusions li,
+    .package-plus-inclusions li,
+    .testimonial-container p
+    {
+        font-size: 0.8em;
+    }
+    .awards-des-wrapper li{
+        font-size: 0.7em;
+    }
+    .message-fb{
+        font-size: 1.3em;
+    }
+    .contact1-information h1{
+        margin: 0;
+    }
+
 }
 
 @media screen and (max-width: 894px){
@@ -377,7 +558,14 @@
         .vission, h2{
             text-align: center;
         }
+        .product-header h1{
+            font-size: 2.5em;
+        }
+}
 
-
+@media screen and (max-width: 450px){
+        .awards-h1{
+            font-size: 1.2em;
+        }
 }
     
