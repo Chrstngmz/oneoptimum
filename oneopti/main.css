@@ -53,7 +53,7 @@ ul{
 }
 
 .main-container{
-    width: 100%;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -142,7 +142,7 @@ header{
         'left-intro right-intro';
     gap: 25px;
     overflow: auto;
-    margin: 30px 0 10px 0;
+    margin: 30px 0 30px 0;
     width: 100%;
     margin: 0;
 }
@@ -158,7 +158,7 @@ header{
     max-width: 600px;
     width: 100%;
     border-radius: 2px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 30px 0;
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(255,255,255,1);
     -moz-box-shadow: -1px 1px 3px -1px rgba(255,255,255,1);
@@ -234,16 +234,16 @@ header{
 
 
 .product-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
-    gap: 20px;
+    display: flex;
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
+    margin: 0 0 40px 0;
 }
 
 .product-post{
     border-radius: 5px;
+    width: 300px;
+    height: auto;
+    margin: 20px;
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
     box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
@@ -252,7 +252,7 @@ header{
 .thumbnail{
     display: block;
     width: 100%;
-    height: 250px;
+    height: auto;
 }
 
 .product-preview{
@@ -265,43 +265,13 @@ header{
 .product-title{
     text-align: center;
     margin: 0;
+    font-size: 1em;
 }
-
-
-/*AWARDS Section*/
-.awards-wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 350px);
-    gap: 20px;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
-}
-
-#aniv-title{
-    padding: 50px 0 20px 0;
-    text-align:center;
-    font-family: 'Righteous', cursive;
-}
-
-.awards-post{
-    border-radius: 5px;
-    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-}
-
-.awards-thumbnail{
-    display: block;
-    width: 100%;
-    height: 400px;
-}
-
 
 /*Ingredients List*/
 
 #ingr-title-1{
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
     text-align:center;
     font-family: 'Righteous', cursive;
 }
@@ -315,6 +285,9 @@ header{
 #green-bg{
     color: #a4d247;
     font-weight: bolder;
+}
+#explain{
+    font-size: 35px;
 }
 
 .opti-why {
@@ -360,36 +333,69 @@ header{
 }
 
 /*Ingredients-Image-Slider*/
+
 .slider-container{
-    box-sizing: border-box;
     display: grid;
     justify-content: center;
     width: 100%;
-    height: 600px;
     margin: auto;
-    padding: 30px 0 10px 0;
     object-fit: cover;
+    padding: 10px 0 0 0;
+}
+
+
+.slider-wrapper{
+    position: relative;
+    margin: auto;
+    object-fit: scale-down;
+    width: 100%;
+    height: auto;
 }
 
 .slider-items{
     display:none;
     width: 100%;
-    height: auto;
-}
-
-.slider-wrapper{
-    position: relative;
-    width: 100%;
-    height: 530px;
 }
 
 .slider-img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     vertical-align: middle;
     padding-bottom: 5px;
-    object-fit: cover;
 }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 2em;
+    font-weight: bolder;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    color: rgb(0, 0, 0);
+    right: 1%;
+    background-color: #4e4141;
+    border-radius: 5px;
+  }
+.prev{
+    color: rgb(0, 0, 0);
+    left: 1%;
+    background-color: #4e4141;
+    border-radius: 5px;
+}
+.prev:hover, .next:hover {
+    color: lightblue;
+    background-color: #717171;
+    border-radius: 20px;
+  }
 
 .dot {
     cursor: pointer;
@@ -406,57 +412,25 @@ header{
     background-color: #717171;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 10px;
-    color: rgb(255, 9, 9);
-    font-weight: bold;
-    font-size: 2em;
-    font-weight: bolder;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-.next {
-    color: black;
-    right: 1%;
-  }
-.prev{
-    color: black;
-    left: 1%;
-}
-.prev:hover, .next:hover {
-    color: lightblue;
-    background-color: #717171;
-    border-radius: 20%;
-  }
+
 
 /*opportunities*/
 .opportunities-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 15px;
     width: 100%;
     overflow: auto;
-
 }
 
 .what-we-do{
     display: grid;
     align-content: center;
-    margin: 20px;
 }
 .what-we-do h1{
     font-family:'Righteous', cursive;
     color: #000000;
-}
-
-.what-we-do h4{
-    padding-left: 20px;
+    text-align: center;
 }
 
 .opportunities-container h4{
@@ -474,15 +448,17 @@ header{
     justify-content: center;
     height: auto;
     width: 100%;
-    
+    padding: 0;
+    margin: 0;
 }
 
 .cashout-img{
-    height:500px;
-    width:auto;
-    max-width: 500px;
+    height:auto;
+    width:300px;
+    max-width: 380px;
     border-radius: 2%;
     object-fit: scale-down;
+    border: 10px solid rgb(87, 115, 125);
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
     box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
@@ -493,109 +469,89 @@ header{
 /*PACKAGE SECTION*/
 .package-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 15px;
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 15px;
+    padding: 10px 0;
 }
 
 .package-pic{
+    height: 300px;
     width:100%;
+    max-width: 500px;
     border-radius: 2%;
-    margin: 10px 0 0 0;
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    margin: 0 auto;
 }
 
 .plat-package-pic{
-    display:inline-block;
-    margin: 0 auto;
-    left: 50%;
-    width: 100%; 
-    max-width: 857px; 
-    height: auto; 
-    border-radius: 2%; 
-    opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.package-text{
-    display: grid;
-    color: white;
-    font-size: 30px;
-    padding: 15px 0 10px 0;
-    border-radius: 2%;
+    display:grid;
+    width: 700px; 
+    max-width: 100%;
+    height: 350px; 
+    border-radius: 10px;
     
 }
 
 .silver-package-wrapper{
     display: grid;
-    position: relative;
     
 }
 
 .gold-package-wrapper{
     display: grid;
-    position: relative;
 }
 
 .platinum-package-wrapper{
     display: grid;
-    position: relative;
+    justify-content: center;
     width: 100%;
-}
-
-.package-pic-overlay{
     height: auto;
+    margin: 20px 0 0 0;
+}
+
+/*NEW BOTTLE*/
+.new-bottle-design-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
     width: 100%;
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    overflow: auto;
+    margin: 50px 0 10px 0;
 }
 
-.plat-package-pic-overlay{
-    height: auto;
-    width: 100%;
-    max-width: 857px;
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+.newbottle-logo-container{
+    display: grid;
+    padding: 20px;
 }
 
-.silver-package-wrapper:hover .package-pic{
-    opacity: 0.3;
-}
-.silver-package-wrapper:hover .package-pic-overlay{
-    opacity: 1;
-}
-
-.gold-package-wrapper:hover .package-pic{
-    opacity: 0.3;
-}
-.gold-package-wrapper:hover .package-pic-overlay{
-    opacity: 1;
+.newbottle-logo-pic{
+    height:auto;
+    width:100%;
+    border-radius: 2%;
+    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
-.platinum-package-wrapper:hover .plat-package-pic{
-    opacity: 0.3;
-}
-.platinum-package-wrapper:hover .plat-package-pic-overlay{
-    opacity: 1;
+.newbottle-descr{
+    display: grid;
+    padding: 0 20px;
 }
 
+.newbottle-descr h1{
+    display: grid;
+    align-items: flex-end;
+    font-size: 3em;
+    color: #000000;
+    font-family:'Righteous', cursive;
+}
+
+.newbottle-descr h5{
+    align-items: start;
+    font-size: 1.3em;
+    color: #000000;
+    padding: 0 20px;
+}
 
 /*MOBILE STOCKIST SECTION*/
 .mobile-stockist-container{
@@ -605,7 +561,7 @@ header{
         'stockist-logo stockist-promo';
     gap: 10px;
     overflow: auto;
-    margin: 120px 0 50px 0;
+    margin: 50px 0 50px 0;
 }
 
 .mobile-stockist-logo-container{
@@ -613,7 +569,7 @@ header{
     grid-area: stockist-logo;
     justify-content: center;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .mobile-stockist-pic{
@@ -653,35 +609,12 @@ header{
     padding: 5px;
 }
 
-/*new bottle*/
-.new-bottle-design-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 15px;
-    width: 100%;
-    overflow: auto;
-    margin: 100px 0 50px 0;
-
+.stockist-promo-des p{
+    padding: 10px 10px;
+    color: #000000;
 }
 
-.newbottle-logo-container{
-    display: grid;
-    padding: 20px;
-}
 
-.newbottle-logo-pic{
-    height:auto;
-    width:100%;
-    border-radius: 2%;
-    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-}
-
-.newbottle-descr{
-    display: grid;
-    padding: 20px;
-}
 
 /*Contacts & Footer*/
 .contacts-container{
@@ -769,7 +702,7 @@ header{
 
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
     .mobile-stockist-container{
         grid-template-columns: 1fr;
         grid-template-areas:  
@@ -792,7 +725,6 @@ header{
         display: block;
         margin: 0 auto;
         transition: all 0.5s ease;
-        opacity: 0.9;
     }
     #click:checked ~ ul{
         left: 0%;
@@ -828,6 +760,15 @@ header{
     .opportunities-container h1,
     .newbottle-descr h1{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 816px){
+    .plat-package-pic{
+        width: 500px; 
+        max-width: 100%;
+        height: 300px; 
+        
     }
 }
 
@@ -867,11 +808,56 @@ header{
     }
 
     .our-products-title{
+        font-size: 1.7em;
+    }
+    .what-we-do h4{
+        font-size: 1em;
+    }
+    #ingr-title-1{
+        font-size: 2.3em;
+    }
+    #explain{
+        font-size: 0.9em;
+    }
+    .opti-why p{
+        font-size: 1em;
+    }
+    .opti-wh h4{
+        font-size: 1em;
+    }
+    #join{
+        font-size: 2.8em;
+    }
+    #independent{
+        font-size: 1em;
+    }
+    .newbottle-descr h1{
         font-size: 2em;
+    }
+    .newbottle-descr h5{
+        font-size: 1em;
+    }
+    #Stockist-h1{
+        font-size: 2em;
+    }
+    .footer h6{
+        font-size: 0.8em;
+        padding: 5px;
     }
 
 }
 
+@media screen and (max-width: 550px){
+
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300x);
+    }
+
+    #contacts-h2{ 
+        font-size: 1.5em;
+    }
+}
 
 @media screen and (max-width: 500px){
     .intro-wrapper{
@@ -882,7 +868,12 @@ header{
         padding: 0;
         margin: 0 20px 0 0;
     }
-    #contacts-h2{ 
-        font-size: 1.5em;
+    .footer h6{
+        font-size: 0.7em;
+        padding: 5px;
+    }
+    .dot{
+        height: 15px;
+        width: 15px;
     }
 }
